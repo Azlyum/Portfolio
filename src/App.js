@@ -1,24 +1,45 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Header, Footer, Home, Projects, Skills, Contact } from "./components";
+import { ThemeProvider, ThemedComponent } from "./ThemeContext";
+import { BrowserRouter as Router } from "react-router-dom";
+import {
+  Header,
+  Footer,
+  Home,
+  Projects,
+  Skills,
+  Contact,
+  Experience,
+} from "./components";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Contact />
-      <main className="flex-grow">
-        <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/contact" component={Contact} />
-        </Routes>
-      </main>
-      <Projects />
-      <Skills />
-      <Footer />
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <div id="Home" />
+        <ThemedComponent
+          lightStyles={{
+            background: "linear-gradient(to right, #1f4f9d, #1d9d6d)",
+            color: "white",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+          }}
+          darkStyles={{
+            background: "linear-gradient(to right, #1f2937, #111827)",
+            color: "white",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.5)",
+          }}
+        >
+          <Header />
+          <main className="flex-grow">
+            <Home />
+            <Projects />
+            <Experience />
+            <Skills />
+            <Contact />
+            <Footer />
+          </main>
+        </ThemedComponent>
+      </Router>
+    </ThemeProvider>
   );
 }
 
