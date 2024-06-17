@@ -21,6 +21,49 @@ a:hover {
   text-decoration: underline;
 }
 
-.ContactStyles {
-  font-size: small;
- }
+/* Home.css */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes borderPulse {
+  0% {
+ 
+    border-color: #3b82f6;
+  }
+  50% {
+
+    border-color: #34d399;
+  }
+  100% {
+    border-color: #3b82f6;
+  }
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  border: 10px solid #3b82f6;
+  animation: pop 2s ease-in-out infinite, borderPulse 4s infinite;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+  animation: pop 0.5s ease-in-out;
+}
