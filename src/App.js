@@ -18,12 +18,12 @@ function App() {
         <div id="Home" />
         <ThemedComponent
           lightStyles={{
-            background: "linear-gradient(to right, #1f4f9d, #1d9d6d)",
+            background: "linear-gradient(to left, #1f4f9d, #1d9d6d)",
             color: "white",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
           }}
           darkStyles={{
-            background: "linear-gradient(to right, #1f2937, #111827)",
+            background: "linear-gradient(to left, #1f2937, #111827)",
             color: "white",
             boxShadow: "0 2px 4px rgba(0,0,0,0.5)",
           }}

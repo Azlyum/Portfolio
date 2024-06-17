@@ -8,12 +8,12 @@ const Header = () => {
     <header
       className={`sticky top-0 bg-gradient-to-r ${
         theme === "light"
-          ? "from-blue-500 to-teal-400 text-white"
-          : "from-gray-800 to-gray-900 text-white"
-      } p-4 flex justify-between items-center shadow-lg z-50`}
+          ? "from-teal-400 to-blue-500 text-white"
+          : "from-gray-900 to-gray-800  text-white"
+      } p-4 justify-between items-center shadow-lg z-50`}
     >
       <h1 className="text-2xl font-bold" id="home">
-        My Portfolio
+        Dyllan Marais Portfolio
       </h1>
       <nav>
         <a href="#Home" className="mx-2 hover:text-gray-200">

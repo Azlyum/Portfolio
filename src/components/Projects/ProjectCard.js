@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
+    <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105">
       <h2 className="text-xl font-bold text-black">{project.title}</h2>
       <p className="text-gray-700 mt-2">{project.description}</p>
       <a

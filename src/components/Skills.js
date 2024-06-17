@@ -37,9 +37,6 @@ const Skills = () => (
       <li>
         <b>Collaboration Tools</b>: Jira, Trello, Confluence, Slack{" "}
       </li>
-      <li>
-        <b>UI/UX Design Principles</b>: Figma Accessibility: WCAG Standards{" "}
-      </li>
     </ul>
   </div>
 );
