@@ -8,12 +8,12 @@ const Home = () => (
       className="profile-picture"
     />
     <p className="text-base md:text-lg mt-4 leading-relaxed">
-      <h2 className="home">Welcome to My Portfolio</h2>
-      My Name is Dyllan Marais, I am a results-driven Software Consultant with
-      extensive experience working with leading companies such as BT,
-      contributing to greenfield projects within the NHS, and currently
-      collaborating with Sky in an Agile environment. Explore my projects and
-      skills to learn more about my work.
+      <h2 className="home">Welcome To My Portfolio</h2>
+      My name is Dyllan Marais, I am a results-driven Software Consultant with
+      extensive experience. Working alongside leading companies such as BT,
+      contributing to greenfield projects within the NHS and collaborated with a
+      cross functional team within Sky. Explore my projects and skills to learn
+      more about my work.
     </p>
   </div>
 );
