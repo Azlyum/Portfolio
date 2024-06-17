@@ -31,13 +31,14 @@ const Header = () => {
         <a href="#Contact" className="mx-2 hover:text-gray-200">
           Contact
         </a>
-        <button onClick={toggleTheme} className="mx-2 focus:outline-none">
-          {theme === "light" ? (
-            <span className="text-gray-400">🌙</span>
-          ) : (
-            <span className="text-gray-400">☀️</span>
-          )}
-        </button>
+        <label className="switch mx-2">
+          <input
+            type="checkbox"
+            onChange={toggleTheme}
+            checked={theme === "dark"}
+          />
+          <span className="slider"></span>
+        </label>
       </nav>
     </header>
   );
